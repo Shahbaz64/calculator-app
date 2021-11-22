@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculator.css">
+    <script src="js/calculator.js"></script>
+    <title>Calculator App</title>
+</head>
+
+<body>
+    <div class="flex-box-model">
+        <div class="display">
+            <p id="exp" class="input-txt"></p>
+            <p id="output-number"></p>
+
+        </div>
+        <div class="btn-container">
+            <button id="btn-1" class="button" value="1" onclick="setExpression(this.id)">1</button>
+            <button id="btn-2" class="button" value="2" onclick="setExpression(this.id)">2</button>
+            <button id="btn-3" class="button" value="3" onclick="setExpression(this.id)">3</button>
+            <button id="btn-4" class="button button1" value="+" onclick="setExpression(this.id)">+</button>
+            <button id="btn-5" class="button" value="4" onclick="setExpression(this.id)">4</button>
+            <button id="btn-6" class="button" value="5" onclick="setExpression(this.id)">5</button>
+            <button id="btn-7" class="button" value="6" onclick="setExpression(this.id)">6</button>
+            <button id="btn-8" class="button button1 button2" value="-" onclick="setExpression(this.id)">-</button>
+            <button id="btn-9" class="button" value="7" onclick="setExpression(this.id)">7</button>
+            <button id="btn-10" class="button" value="8" onclick="setExpression(this.id)">8</button>
+            <button id="btn-11" class="button" value="9" onclick="setExpression(this.id)">9</button>
+            <button id="btn-12" class="button button1 button2" value="*" onclick="setExpression(this.id)">*</button>
+            <button id="btn-13" class="button buttonC" onclick="clearDisplay()">C</button>
+            <button id="btn-14" class="button" value="0" onclick="setExpression(this.id)">0</button>
+            <button id="btn-15" class="button" onclick="getResult()">=</button>
+            <button id="btn-16" class="button button1 button2" value="/" onclick="setExpression(this.id)">/</button>
+        </div>
+    </div>
+</body>
+
+</html>
