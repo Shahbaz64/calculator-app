@@ -1,27 +1,32 @@
 "use Strict";
 
-// sets an Expression when user preesses buttons
-function setExpression(id) {
-  let text = document.getElementById("exp");
-  const val = document.getElementById(id).value;
-  text.innerHTML += val;
-}
-
-// gets expression and generate result of that expression
-function getResult() {
+const getResult = () => {
   const exp = document.getElementById("exp").innerHTML;
+  const output = document.getElementById("output-number");
   try {
-    const result = eval(exp);
-    document.getElementById("output-number").innerHTML = result;
+    if (!exp) {
+      output.innerHTML = "";
+    } else {
+      output.innerHTML = eval(exp);
+    }
   } catch (e) {
     if (e instanceof SyntaxError) {
-      document.getElementById("output-number").innerHTML = "Invalid Input!";
+      output.innerHTML = "Invalid Input!";
     }
   }
-}
+};
 
-// clear both the input and output areas
-function clearDisplay() {
+const clearDisplay = () => {
   document.getElementById("exp").innerHTML = "";
   document.getElementById("output-number").innerHTML = "";
-}
+};
+
+const buttons = document.querySelectorAll(".button");
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    document.getElementById("exp").innerHTML += button.value;
+  });
+});
+
+document.getElementById("button-c").addEventListener("click", clearDisplay);
+document.getElementById("button-e").addEventListener("click", getResult);

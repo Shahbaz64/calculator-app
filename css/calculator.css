@@ -1,10 +1,11 @@
 .flex-box-model {
   display: flex;
   flex-wrap: wrap;
-  background-color: #aacfe7;
-  width: 250px;
-  border: 7px solid #acbe85;
   margin: auto;
+  border: 7px solid #acbe85;
+  background-color: #aacfe7;
+  width: 249px;
+  justify-content: center;
   margin-top: 10%;
 }
 
@@ -12,12 +13,11 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 240px;
+  width: 96%;
   background-color: #f3fbec;
   border-bottom: 5px solid #88a5bb;
   min-height: 60px;
   margin: 5px 5px 0px 5px;
-  
 }
 
 #exp{
@@ -25,8 +25,8 @@
   text-align: right;
   padding: 2px;
   font-weight: 500;
-  width: 235px;
-  min-height: 30px;
+  width: 98%;
+  padding-bottom: 6%;
   word-break: break-all;
 }
 
@@ -57,7 +57,7 @@
   margin: 10px 1px 0px 5px;
 }
 
-.button1 {
+.yellow-btn {
   background-color: #f2ffa0;
   margin-right: 5px;
 }
@@ -66,7 +66,7 @@
   padding: 14px 23px;
 }
 
-.buttonC {
+#button-c {
   background-color: #f0a3aa;
   padding: 14px 21px;
 }
@@ -75,10 +75,10 @@
   background-color: #e6e5e5;
 }
 
-.button1:hover {
+.yellow-btn:hover {
   background-color: #edfd81;
 }
 
-.buttonC:hover {
+#button-c:hover {
   background-color: #e99196;
 }
