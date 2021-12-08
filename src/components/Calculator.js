@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Buttons from "./ButtonPad";
-import "../Styles/calculator.css";
+import Buttons from "components/buttons";
+import "styles/calculator.css";
 
 /* eslint-disable no-eval */
 
@@ -13,7 +13,7 @@ class Calculator extends Component {
     if (val === "C") {
       this.setState({
         exp: "",
-        res: ""
+        res: "",
       });
     } else if (val === "=") {
       try {
@@ -22,7 +22,6 @@ class Calculator extends Component {
             res: "",
           });
         } else {
-          // const result = eval(this.state.exp);
           this.setState({
             res: eval(this.state.exp),
           });
