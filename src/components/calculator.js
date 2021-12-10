@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Buttons from "components/buttons";
+import Buttons from "components/calculatorButtons";
 import "styles/calculator.css";
 
 /* eslint-disable no-eval */
