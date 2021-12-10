@@ -4,7 +4,7 @@ import "styles/calculator.css";
 import PropTypes from "prop-types";
 import { v4 as uuid } from "uuid";
 
-class CalculatorllButtons extends Component {
+class CalculatorButtons extends Component {
   myButtons = [
     { value: "1", className: "btn" },
     { value: "2", className: "btn" },
@@ -40,12 +40,12 @@ class CalculatorllButtons extends Component {
   }
 }
 
-CalculatorllButtons.propTypes = {
+CalculatorButtons.propTypes = {
   onClickHandler: PropTypes.func.isRequired,
 };
 
-CalculatorllButtons.defaultProps = {
+CalculatorButtons.defaultProps = {
   onClickHandler: () => {},
 };
 
-export default CalculatorllButtons;
+export default CalculatorButtons;
