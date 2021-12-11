@@ -47,7 +47,7 @@ class Calculator extends Component {
         } else {
           if (this.state.res == "Invalid") {
             this.setState({
-              exp: val,
+              exp: "",
             });
           } else {
             this.setState({
