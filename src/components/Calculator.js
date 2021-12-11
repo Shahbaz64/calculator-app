@@ -29,14 +29,34 @@ class Calculator extends Component {
       } catch (e) {
         if (e instanceof SyntaxError) {
           this.setState({
-            res: "Invalid Input",
+            res: "Invalid",
           });
         }
       }
     } else {
-      this.setState({
-        exp: this.state.exp + val,
-      });
+      if (!this.state.res) {
+        this.setState({
+          exp: this.state.exp + val,
+        });
+      } else {
+        if (val >= 0 && val <= 9) {
+          this.setState({
+            exp: val,
+            res: "",
+          });
+        } else {
+          if (this.state.res == "Invalid") {
+            this.setState({
+              exp: val,
+            });
+          } else {
+            this.setState({
+              exp: this.state.res + val,
+              res: "",
+            });
+          }
+        }
+      }
     }
   };
 
