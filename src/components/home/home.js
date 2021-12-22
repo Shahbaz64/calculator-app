@@ -9,12 +9,22 @@ const Home = () => {
       <div>
         <h2>Calculator App</h2>
         <div className="card">
-          <p className="about-calculator">
-            This is Simple React-Made Calculator App Which is developed using
-            react Functional Components. Here, We use Redux for global state
-            Mangement. In this Assignment, we used react routers for routers
-            management.
-          </p>
+          <ul>
+            <li>
+              <p className="about-calculator">
+                This is a Simple Calculator App, it provides you the facility to
+                perform calculations easily and view recent History
+              </p>
+            </li>
+            <li>
+              <p className="about-calculator">
+                This is Simple React-Made Calculator App Which is developed by
+                using react Functional Components. Here, We use Redux for global
+                state Mangement. In this Assignment, we used react routers for
+                routers management.
+              </p>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
