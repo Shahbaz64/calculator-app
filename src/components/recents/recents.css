@@ -23,6 +23,9 @@ h2 {
 }
 
 .rec-entery {
+  display: flex;
+  flex-flow: column wrap;
+  word-break: break-all;
   margin-top: 2px;
   padding: 1px;
   border-bottom: 1px solid #2578af;
