@@ -4,6 +4,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { clearHistoryHandler } from "components/actions/actions";
 import NavBar from "components/home/navBar";
 import "components/recents/recents.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash, faHistory } from "@fortawesome/free-solid-svg-icons";
 
 const Recents = () => {
   const state = useSelector((state) => state.MyReducer);
@@ -14,13 +16,12 @@ const Recents = () => {
       <NavBar />
       <div className="header">
         <h2>Recent History</h2>
-        <i
+        <FontAwesomeIcon
           id="del-icon"
           title="Clear History"
-          className="fa fa-trash-o"
-          aria-hidden="true"
+          icon={faTrash}
           onClick={() => dispatch(clearHistoryHandler())}
-        ></i>
+        ></FontAwesomeIcon>
       </div>
       <div className="recents">
         {state.recents[0] ? (
@@ -37,7 +38,7 @@ const Recents = () => {
           </div>
         ) : (
           <div className="no-recents">
-            <i className="fa fa-history" aria-hidden="true"></i>
+            <FontAwesomeIcon icon={faHistory}></FontAwesomeIcon>
             <p> No History!!</p>
           </div>
         )}

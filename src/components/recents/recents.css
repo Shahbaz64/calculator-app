@@ -9,12 +9,11 @@
 
 .header {
   margin: 0 auto;
+  align-items: baseline;
   text-align: center;
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
   max-width: 70%;
-  margin-top: 2%;
   color: #579fcf;
 }
 
