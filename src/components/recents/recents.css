@@ -7,13 +7,18 @@
   border: 5px solid #579fcf;
 }
 
+h2 {
+  margin-top: 2%;
+}
+
 .header {
   margin: 0 auto;
-  align-items: baseline;
   text-align: center;
+  align-items: baseline;
   display: flex;
   justify-content: space-between;
   max-width: 70%;
+  margin-top: 2%;
   color: #579fcf;
 }
 
@@ -47,12 +52,10 @@
   .recents {
     margin: 0 auto;
     max-width: 80%;
-    margin-top: 3%;
+    margin-top: 2%;
   }
 
   .header {
-    align-items: baseline;
     max-width: 70%;
-    margin-top: 4%;
   }
 }
